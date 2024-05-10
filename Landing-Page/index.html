@@ -2,42 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Coffee Shop</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- custom css file -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="navbar">
-            <img src="img/logo.png" class="logo">
-            <nav>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Collections</a></li>
-                    <li><a href="">Category</a></li>
-                </ul>
-            </nav>
-            <img src="img/cart.png" class="cart">
-        </div>
+
+    
+    <!-- header section starts -->
+
+    <header class="header">
+
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="">
+        </a>
+
+        <nav class="navbar">
+            <div id="close" class="fas fa-times"></div>
+
+            <a href="#" class="nav_item">home</a>
+            <a href="#" class="nav_item">about</a>
+            <a href="#" class="nav_item">menu</a>
+            <a href="#" class="nav_item">order</a>
+            <a href="#" class="nav_item">catering</a>
+            <a href="#" class="nav_item">locations</a>
+
+        </nav>
+
+        <div id="menu" class="fas fa-bars"></div>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts -->
+
+    <section class="home">
 
         <div class="content">
-            <a href="" class="btn">2024 Collections</a>
-            <h1>You should always<br>feel pretty</h1>
-            <p>Clothes that are sure to heat up your winter.</p>
+            <h1 class="title">fresh <span>coffee</span> in the <span>morning</span> </h1>
+            <p class="description"><b>Coffee, because bad mornings deserve a second chance.</b></p>
+            <a href="#" class="btn">DOWNLOAD APP</a>
+        </div>
 
-            <div class="arrow-icons">
-                <img src="img/back-arrow.png">
-                <img src="img/next-arrow.png">
-            </div>
+        <div class="image">
+            <img src="images/coffee2.png">
+        </div>
 
-            <img src="img/img.png" class="feature-img">
+    </section>
 
-            <div class="social">
-                <a href="">FACEBOOK</a>
-                <a href="">INSTAGRAM</a>
-                <a href="">TWITTER</a>
-            </div>
-    </div>
+
+    <!-- home section ends -->
+    
+    <!-- GSAP CDN Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+    <!-- custom js file -->
+    <script src="script.js"></script>
 </body>
 </html>
