@@ -138,6 +138,14 @@ section{
   margin-top: 11rem;
 }
 
+.home .icons{
+  padding-top: 55rem;
+}
+
+.home .icons img{
+  padding: 0 1rem;
+}
+
 /* end */
 /* about */
 
@@ -149,6 +157,57 @@ section{
   align-items: center;
   justify-content: center;
   background: #ffefcb;
+}
+
+.about .img1{
+  flex: 1 1 40rem;
+  margin-top: 15rem;
+}
+
+.about .img1 img{
+  width: 80%;
+  height: 80%;
+}
+
+.about .cont1{
+  flex: 1 1 40rem;
+  padding-top: 6.5rem;
+}
+
+.about .cont1 .heading{
+  font-size: 6rem;
+  color: #2a201c;
+  text-transform: uppercase;
+  font-family: "Briem Hand", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.about .cont1 .story{
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1.8;
+  padding: 1rem 0;
+  color: #2a201c;
+  text-align: justify;
+}
+
+.about .cont1 .btn1{
+  margin-top: 1rem;
+  display: inline-block;
+  padding: .9rem 3rem;
+  font-size: 1.7rem;
+  color: #fff;
+  background: #d3ad7f;
+  cursor: pointer;
+  font-family: "Briem Hand", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.about .cont1 .btn1:hover{
+  letter-spacing: .2rem;
+  background: #2a201c;
 }
 
 @media (max-width:991px){
