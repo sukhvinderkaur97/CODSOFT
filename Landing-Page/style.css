@@ -221,6 +221,122 @@ section{
   background: #2a201c;
 }
 
+/* about end */
+/* menu */
+
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: #ffefcb;
+}
+
+.menu h1{
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: -11rem;
+  font-size: 6rem;
+  margin-right: 1rem;
+  font-family: "Briem Hand", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.menu .all-products{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: -5rem;
+}
+
+.menu .all-products .products{
+  overflow: hidden;
+  background: #efcda4;
+  color: #2a201c;
+  text-align: center;
+  width: 254px;
+  height: 357px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.2rem;
+  margin: 2rem;
+}
+
+.menu .all-products .products .product-info .product-title{
+  font-size: 2rem;
+}
+
+.menu .all-products .products .product-info .price{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.menu .all-products .products .product-info .pbtn{
+  padding: .9rem 3rem;
+  font-size: 1.7rem;
+  color: #2a201c;
+  background: #fff;
+  cursor: pointer;
+  font-family: "Briem Hand", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.menu .all-products .products:hover img{
+  scale: 1.1;
+}
+
+.menu .all-products .products:hover{
+  box-shadow: 5px 15px 25px #2a201c;
+}
+
+.menu .all-products .products img{
+  height: 200px;
+  margin: 1rem;
+  transition: all 0.3s;
+  border-radius: 4rem;
+}
+
+.menu .all-products .products a:link, .menu .all-products .products a:visited{
+  color: #2a201c;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #fff;
+  padding: 1.2rem 3rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  transition: all 0.2s;
+}
+
+.menu .all-products .products a:hover{
+  transform: scale(1.1);
+}
+
+.menu .all-products .btn2{
+  margin-bottom: -8rem;
+  display: inline-block;
+  padding: .9rem 3rem;
+  font-size: 1.7rem;
+  color: #fff;
+  background: #d3ad7f;
+  cursor: pointer;
+  font-family: "Briem Hand", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.menu .all-products .btn2:hover{
+  letter-spacing: .2rem;
+  background: #2a201c;
+}
+
 @media (max-width:991px){
   html{
     font-size: 55%;
