@@ -84,9 +84,19 @@ section{
   background: #ffefcb;
 }
 
+.home .vl {
+  border-left: 6px solid #2a201c;
+  height: 500px;
+  position: absolute;
+  left: 7%;
+  margin-left: -3px;
+  top: 18rem;
+}
+
 .home .content{
-  flex: 1 1 40rem;
+  flex: 2 1 44rem;
   padding-top: 6.5rem;
+  padding-left: 5rem;
 }
 
 .home .content .title{
@@ -130,11 +140,12 @@ section{
 }
 
 .home .image{
-  flex: 1 1 40rem;
+  flex: 1 1 32rem;
+  margin-right: 10rem;
 } 
 
 .home .image img{
-  width: 100%;
+  width: 130%;
   margin-top: 11rem;
 }
 
