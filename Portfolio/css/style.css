@@ -272,7 +272,7 @@ section.freelancer p {
     font-family: 'Lato', sans-serif;
 }
 
-section.reviews .slider .slide img {
+/* section.reviews .slider .slide img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -332,10 +332,18 @@ section.reviews .slider-dots button {
 section.reviews .dots li.slick-active button {
     background: var(--primary);
     width: 20px;
-}
+} */
 
 section.work {
     background: var(--light);
+}
+
+section.work .section-heading{
+    margin-bottom: 2rem;
+}
+
+section.work .container hr{
+    margin-bottom: 2rem;
 }
 
 section.work .card-wrapper {
@@ -384,65 +392,73 @@ section.work .card-wrapper .card img {
     width: 100%;
 }
 
-section.blog {
+section.projects {
     background: var(--dark);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 90%, 0 100%);
     padding-bottom: 12rem;
 }
 
-section.blog .section-heading {
+section.projects .section-heading {
     color: var(--pure);
 }
-
-section.blog .card-wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 3rem;
+section.projects .section-heading{
+    margin-bottom: 2rem;
 }
 
-section.blog .card-wrapper .card {
+section.projects .container hr{
+    margin-bottom: 2rem;
+}
+
+section.projects .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 3rem;
+    margin-top: 50px;
+}
+
+section.projects .card-wrapper .card {
     background: var(--pure);
 }
 
-section.blog .card-wrapper .card .img-wrapper img {
+section.projects .card-wrapper .card .img-wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-section.blog .card-wrapper .card .card-content {
+section.projects .card-wrapper .card .card-content {
     padding: 1rem;
     padding-left: 2rem;
     padding-right: 2rem;
 }
 
-section.blog .card-wrapper .card .card-content h1 {
+section.projects .card-wrapper .card .card-content h1 {
     font-size: 1rem;
     font-weight: 600;
 }
 
-section.blog .card-wrapper .card .card-content a {
+section.projects .card-wrapper .card .card-content a {
     color: var(--secondary);
     text-decoration: none;
 }
 
-section.blog .card-wrapper .card .card-content a:hover {
+section.projects .card-wrapper .card .card-content a:hover {
     color: var(--primary);
 }
 
-section.blog .card-wrapper .card .card-content span {
+section.projects .card-wrapper .card .card-content span {
     color: var(--ternary);
     font-size: 0.8rem;
 }
 
-section.blog .card-wrapper .card .card-content p {
+section.projects .card-wrapper .card .card-content p {
     font-family: 'Lato', sans-serif;
     color: var(--ternary);
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
-section.blog .card-wrapper .card .card-content a.read-more {
+section.projects .card-wrapper .card .card-content a.read-more {
     font-size: 0.8rem;
 }
 
@@ -454,10 +470,6 @@ section.contact .card-wrapper {
 
 section.contact .card-wrapper .card {
     text-align: center;
-}
-
-section.contact .card-wrapper .card img {
-    margin-bottom: 3rem;
 }
 
 section.contact .card-wrapper .card h1 {
@@ -490,14 +502,22 @@ section.contact .input-wrap-2 input {
 
 section.contact input {
     padding: 0.5rem;
-    border: 1px solid var(--light);
-    font-size: 0.9rem;
+    border: 3px solid var(--primary);
+    font-size: 1rem;
+}
+
+section.contact input:hover{
+    border: 3px solid var(--secondary);
 }
 
 section.contact .input-wrap-2 textarea {
     padding: 0.5rem;
-    border: 1px solid var(--light);
-    font-size: 0.9rem;
+    border: 3px solid var(--primary);
+    font-size: 1rem;
+}
+
+section.contact .input-wrap-2 textarea:hover{
+    border: 3px solid var(--secondary);
 }
 
 section.contact .input-wrap-2 textarea:focus,
@@ -505,33 +525,31 @@ section.contact input:focus {
     outline: none;
 }
 
-section.contact .btn-wrapper {
-    text-align: center;
-    margin-top: 2rem;
-}
-
 footer {
     background: var(--dark);
-    text-align: center;
-    padding: 5rem 0;
+    padding: 1rem 0;
 }
 
-footer .footer-logo {
-    margin-bottom: 3rem;
-    width: 150px;
+footer h2{
+    font-size: 1rem;
+    color: var(--ternary);
+    margin-bottom: 2rem;
+    margin-left: 2rem;
 }
-
 footer .footer-socials a {
     margin-right: 1rem;
+    color: var(--primary);
+    font-size: 1.5rem;
 }
 
 footer .footer-socials {
-    margin-bottom: 3rem;
-    margin-right: -1rem;
+    margin: -1.5rem -1rem 3rem 2.2rem;
 }
 
 footer .copyright {
     color: var(--ternary);
+    text-align: center;
+    margin-top: 1.2rem;
 }
 
 
@@ -620,14 +638,30 @@ footer .copyright {
 
     .hero .left img {
         width: 260px;
+        margin-right: 4rem;
+    }
+
+    .hero .right h4 {
+        margin-top: 10rem;
+        margin-left: -3rem;
     }
 
     .hero .right h1 {
+        margin-left: -3rem;
         font-size: 3rem;
     }
 
+    .hero .right h6 {
+        margin-left: -0.5rem;
+    }
+
+    .hero .right p{
+        text-align: justify;
+        margin-left: -0.5rem;
+    }
+
     .hero {
-        padding-top: 10rem;
+        padding-top: 12rem;
     }
 
     header {
@@ -638,7 +672,11 @@ footer .copyright {
         height: 360px;
     }
 
-    section.services .card-wrapper {
+    section.about p {
+        text-align: justify;
+    }
+
+    section.skills .card-wrapper {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -646,11 +684,11 @@ footer .copyright {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    section.blog .card-wrapper {
+    section.projects .card-wrapper {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    section.blog {
+    section.projects {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 97%, 0 100%);
     }
 }
@@ -694,7 +732,7 @@ footer .copyright {
         padding: 4rem 0;
     }
 
-    section.services .card-wrapper {
+    section.skills .card-wrapper {
         grid-template-columns: repeat(1, 1fr);
         margin-top: 6rem;
     }
@@ -708,11 +746,7 @@ footer .copyright {
         padding-bottom: 8rem;
     }
 
-    section.reviews .slider .slide {
-        padding: 0;
-    }
-
-    .section-heading+p {
+    .section-heading p {
         margin-bottom: 3rem;
     }
 
