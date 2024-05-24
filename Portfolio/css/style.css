@@ -272,18 +272,6 @@ section.freelancer p {
     font-family: 'Lato', sans-serif;
 }
 
-/* section.reviews .slider .slide img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 2rem;
-} */
-
 section.work {
     background: var(--light);
 }
@@ -427,11 +415,9 @@ section.contact .card-wrapper .card h1 {
     margin-bottom: 1rem;
 }
 
-section.contact .card-wrapper .card h6 {
-    font-size: 1rem;
-    color: var(--ternary);
-    font-weight: 400;
+section.contact .section-heading{
     margin-bottom: 4rem;
+    margin-top: -3rem;
 }
 
 section.contact .input-wrap {
