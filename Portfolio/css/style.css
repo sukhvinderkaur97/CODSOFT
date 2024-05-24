@@ -292,16 +292,6 @@ section.reviews .slider .slide {
     padding: 0 10rem;
 
 }
-
-section.reviews .slider .slide p {
-    font-family: 'Lato', sans-serif;
-    color: var(--ternary);
-    margin-bottom: 1rem;
-}
-
-section.reviews .slider .slide span {
-    font-size: 0.8rem;
-}
 */
 
 section.work {
