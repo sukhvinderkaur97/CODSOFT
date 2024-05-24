@@ -282,17 +282,7 @@ section.freelancer p {
     -o-border-radius: 50%;
     object-fit: cover;
     margin-bottom: 2rem;
-}
-
-section.reviews .slider .slide {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 0 10rem;
-
-}
-*/
+} */
 
 section.work {
     background: var(--light);
