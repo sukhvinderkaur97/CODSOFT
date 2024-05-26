@@ -178,6 +178,10 @@ section.about .social a {
     transition: .5s ease;
 }
 
+section.about .social a:hover{
+    color: var(--secondary);
+}
+
 section.about .social a img {
     width: 100%;
     height: 100%;
@@ -480,6 +484,10 @@ footer .footer-socials a {
 
 footer .footer-socials {
     margin: -1.5rem -1rem 3rem 2.2rem;
+}
+
+footer .footer-socials a:hover{
+    color: var(--light);
 }
 
 footer .copyright {
